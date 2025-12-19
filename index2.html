@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIC Life Insurance Advisor</title>
+  <style>
+    body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:linear-gradient(180deg,#f0f4ff,#f9fbff);color:#333;line-height:1.6}
+    header{background:linear-gradient(135deg,#002b7f,#0055cc);color:#fff;text-align:center;padding:80px 20px 70px;position:relative;border-bottom-left-radius:40px;border-bottom-right-radius:40px}
+.lic-logo{width:90px;position:absolute;top:20px;left:20px;background:#fff;padding:6px;border-radius:8px}
+    header h1{margin-bottom:10px}
+    .btn{display:inline-block;margin-top:20px;padding:14px 30px;background:linear-gradient(135deg,#ffcc00,#ffb700);color:#003399;text-decoration:none;font-weight:bold;border-radius:30px;box-shadow:0 6px 15px rgba(0,0,0,0.25);transition:transform 0.2s,box-shadow 0.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,0.3)}
+    section{background:#fff;max-width:1050px;margin:40px auto;padding:45px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+    h2{color:#003399;margin-bottom:20px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{background:linear-gradient(180deg,#eef2ff,#ffffff);padding:28px;text-align:center;font-weight:bold;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,0.12);transition:transform 0.2s,box-shadow 0.2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.2)}
+    .why ul{list-style:none;padding:0}
+    .why li{padding:8px 0}
+    .contact form{display:grid;gap:15px}
+    .contact input,.contact select{padding:12px;font-size:16px}
+    .contact button{padding:12px;background:#003399;color:#fff;border:none;font-size:16px;cursor:pointer}
+    footer{background:#003399;color:#fff;text-align:center;padding:15px}
+    .whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;font-size:30px;padding:10px 15px;border-radius:50%;text-decoration:none}
+.callbtn{position:fixed;bottom:90px;right:20px;background:#003399;color:#fff;font-size:26px;padding:12px 16px;border-radius:50%;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center}
+.stat{background:#eef2ff;padding:25px;border-radius:10px;font-weight:bold}
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.testimonial{background:#f9f9ff;padding:20px;border-radius:10px;font-style:italic}
+.faq details{margin-bottom:10px}
+    .advisor-box{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:center}
+@media(max-width:768px){.advisor-box{grid-template-columns:1fr;text-align:center}}
+    .advisor-photo{position:relative;width:260px;height:320px;margin:auto;display:flex;align-items:flex-end;justify-content:center}
+.advisor-photo::before{content:'';position:absolute;inset:-14px;background:linear-gradient(135deg,#e6f0ff,#ffffff);border-radius:32px;z-index:0}
+.advisor-photo img{position:relative;width:220px;height:260px;object-fit:cover;border-radius:26px;box-shadow:0 20px 40px rgba(0,0,0,0.25);z-index:2}
+.chat-bubble{position:absolute;left:-20px;top:20px;background:#ffffff;border-radius:16px;padding:10px 14px;box-shadow:0 10px 25px rgba(0,0,0,0.15);font-size:14px;z-index:3}
+.chat-bubble.blue{background:#e8f2ff}
+.chat-bubble.bottom{top:auto;bottom:30px;left:auto;right:-20px}
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/919934352802" class="whatsapp" target="_blank">💬</a>
+<a href="tel:9934352802" class="callbtn">📞</a>
+
+<header>
+  <div style="position:absolute;top:18px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.15);backdrop-filter:blur(6px);padding:8px 18px;border-radius:999px;font-weight:700;letter-spacing:1px;">
+    <span style="font-size:16px;">BIMA CARE POINT</span>
+    <span style="font-size:13px;font-weight:500;opacity:0.9;"> • Powered by Ashok Kumar</span>
+  </div>
+  <img src="image2.jpeg" alt="LIC Logo" class="lic-logo">
+  <div style="max-width:1150px;margin:0 auto;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;">
+
+    <!-- LEFT CONTENT -->
+    <div style="text-align:left;">
+      <div style="display:flex;gap:14px;align-items:center;margin-bottom:18px;flex-wrap:wrap;">
+        <span style="font-size:18px;font-weight:700;color:#ffcc00;">⭐ 4.9</span>
+        <span style="opacity:0.9;">Trusted by 2000+ families in Godda</span><span style="background:rgba(255,255,255,0.18);padding:6px 12px;border-radius:999px;font-weight:600;">⏳ Trusted for 10+ Years</span>
+        <span style="background:rgba(255,255,255,0.18);padding:6px 12px;border-radius:999px;font-weight:600;">🏆 Best Insurance Advisor • 8+ Years</span>
+      </div>
+
+      <h1 style="font-size:54px;line-height:1.1;margin:0 0 18px;">Honest Insurance Advice,<br>Made Simple for Your Family</h1>
+
+      <p style="font-size:20px;opacity:0.95;margin-bottom:26px;">
+        Honest advice. Simple explanations. End‑to‑end support — without pressure or spam.
+      </p>
+
+      <a href="#contact" class="btn">📞 Book a Free Call</a>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div style="background:#8fd16a;border-radius:28px;padding:30px 30px 90px;position:relative;box-shadow:0 25px 50px rgba(0,0,0,0.25);min-height:360px;overflow:visible;">
+      <p style="font-size:20px;font-weight:700;margin-bottom:10px;">Application Assistance</p>
+      <p style="font-size:15px;opacity:0.95;margin-bottom:16px;">Handled personally by <strong>Ashok Kumar</strong> — ensuring correct documentation, faster processing, and complete peace of mind.<br><span style="display:inline-block;margin-top:8px;font-weight:600;">🏆 Awarded <strong>Best Agent</strong> consistently for the last <strong>5 years</strong></span></p>
+      <div style="background:#ffffff;border-radius:18px;padding:18px;margin-bottom:18px;">
+        <div style="height:12px;background:#e5e5e5;border-radius:6px;margin-bottom:10px;"></div>
+        <div style="height:12px;background:#e5e5e5;border-radius:6px;margin-bottom:10px;width:80%;"></div>
+        <div style="height:12px;background:#e5e5e5;border-radius:6px;width:60%;"></div>
+      </div>
+      <img src="first.jpeg" alt="Ashok Kumar" style="width:190px;position:absolute;right:14px;bottom:-40px;border-radius:22px;box-shadow:0 15px 35px rgba(0,0,0,0.3);">
+    </div>
+
+  </div>
+</header>
+
+<section>
+  <h2>About Your Advisor</h2>
+  <div class="advisor-box">
+  <div class="advisor-photo">
+    <div class="chat-bubble blue">Can you help me choose the right plan?</div>
+    <div class="chat-bubble bottom">Yes, I’ll explain everything simply 🙂</div>
+    <img src="first.jpeg" alt="Ashok Kumar - LIC Advisor">
+  </div>
+  <div>
+    <p style="font-size:18px;line-height:1.7;"><strong>Ashok Kumar</strong> is a certified LIC Life Insurance Advisor who focuses on explaining insurance in simple, practical language. His approach is advisory-first — no pressure, no confusion — helping families choose what actually fits their needs.</p>
+    <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
+      <span style="background:#eef2ff;padding:8px 14px;border-radius:999px;font-weight:600;">✔ Trusted Advisor</span>
+      <span style="background:#eef2ff;padding:8px 14px;border-radius:999px;font-weight:600;">✔ Claim Support Focus</span>
+      <span style="background:#eef2ff;padding:8px 14px;border-radius:999px;font-weight:600;">✔ Local Presence</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+  <h2>Our Insurance Services</h2>
+  <div class="cards">
+    <div class="card">Life Insurance</div>
+    <div class="card">Term Insurance</div>
+    <div class="card">Child Education Plans</div>
+    <div class="card">Pension & Retirement Plans</div>
+    <div class="card">Health Insurance</div>
+    <div class="card">Policy Renewal & Claim Support</div>
+  </div>
+  <p style="margin-top:25px;text-align:center;">
+    <a href="https://licindia.in" target="_blank" rel="noopener noreferrer" class="btn" onclick="window.open('https://licindia.in','_blank');return false;">View Official LIC Plans & Details</a>
+  </p>
+</section>
+
+<section>
+  <h2>Additional Facilities We Provide</h2>
+  <div class="cards">
+    <div class="card">📄 Doorstep Policy Services</div>
+    <div class="card">📑 Online & Offline Documentation Support</div>
+    <div class="card">⏱ Fast Policy Issuance Assistance</div>
+    <div class="card">🧾 Premium Reminder Service</div>
+    <div class="card">🛡 Claim Settlement Guidance</div>
+    <div class="card">👨‍👩‍👧 Family Financial Planning</div>
+    <div class="card">📞 Lifetime Customer Support</div>
+    <div class="card">💼 Personalized Insurance Advice</div>
+    <div class="card">📲 WhatsApp Policy Updates</div>
+    <div class="card">📅 Annual Policy Review</div>
+    <div class="card">👴 Senior Citizen Insurance Guidance</div>
+    <div class="card">🎓 Student & Child Future Planning</div>
+    <div class="card">💳 Flexible Premium Payment Guidance</div>
+    <div class="card">🧑‍💼 One-to-One Financial Counseling</div>
+    <div class="card">📂 Policy Record Maintenance</div>
+    <div class="card">🚪 Home Visit Facility</div>
+  </div>
+</section>
+
+<section class="why">
+  <h2>Why Choose LIC?</h2>
+  <ul>
+    <li>✔ Government-backed & India’s most trusted insurer</li>
+    <li>✔ Guaranteed maturity & death benefits</li>
+    <li>✔ Tax benefits under Section 80C</li>
+    <li>✔ High claim settlement ratio</li>
+    <li>✔ Lifetime financial protection</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Our Experience in Numbers</h2>
+  <div class="stats">
+    <div class="stat">✔ 2000+ Happy Clients</div>
+    <div class="stat">✔ 10+ Years Experience</div>
+    <div class="stat">✔ 100% Claim Support</div>
+    <div class="stat">✔ Trusted LIC Advisor</div>
+  </div>
+</section>
+
+<section>
+  <h2>Why People Trust BIMA CARE POINT</h2>
+  <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;">
+    <div>
+      <h3 style="font-size:26px;margin-bottom:10px;">Godda’s Top Insurance Advisor</h3>
+      <p style="font-size:18px;opacity:0.9;">Trusted by families across Godda for honest advice, clear explanations, and reliable claim support. Our focus is long‑term security, not quick sales.</p>
+      <div style="margin-top:18px;display:flex;gap:14px;flex-wrap:wrap;">
+        <span style="background:#eef7ff;padding:10px 16px;border-radius:14px;font-weight:600;">🏆 Best Insurance Advisor (5 Years)</span>
+        <span style="background:#eef7ff;padding:10px 16px;border-radius:14px;font-weight:600;">🏆 Most Trusted in Godda</span>
+        <span style="background:#e8fff1;padding:10px 16px;border-radius:14px;font-weight:600;">⭐ 2000+ Happy Clients</span>
+        <span style="background:#fff4e5;padding:10px 16px;border-radius:14px;font-weight:600;">✔ High Claim Success</span>
+      </div>
+    </div>
+    <div style="background:#f9fbff;padding:25px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,0.12);">
+      <p style="font-style:italic;">“Ashok Kumar is one of the most reliable and transparent insurance advisors in Godda. He explains everything patiently and supports fully during claims.”</p>
+      <p style="margin-top:12px;font-weight:bold;">— Sunil Kumar Mahto, Godda</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq" style="display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;">
+  <div>
+    <h2 style="font-size:36px;line-height:1.2;">Frequently Asked Questions</h2>
+    <p style="font-size:18px;opacity:0.85;">Clear answers to common questions — so you can decide with confidence.</p>
+  </div>
+  <div>
+    <details open>
+      <summary><strong>What is BIMA CARE POINT?</strong></summary>
+      <p>BIMA CARE POINT helps families in Godda choose the right LIC insurance plans through honest advice and simple explanations.</p>
+    </details>
+    <details>
+      <summary><strong>But what exactly do you do?</strong></summary>
+      <p>I personally guide you through plan selection, documentation, purchase, and provide complete support even during claims.</p>
+    </details>
+    <details>
+      <summary><strong>Is the consultation free?</strong></summary>
+      <p>Yes. Consultation and guidance are completely free — no pressure, no hidden charges.</p>
+    </details>
+    <details>
+      <summary><strong>Will you support during claim settlement?</strong></summary>
+      <p>Absolutely. Claim support is provided to every client and their family members — from document preparation to follow-ups till settlement.</p>
+    </details>
+    <details>
+      <summary><strong>Which LIC plan is best for my family?</strong></summary>
+      <p>There is no one-size-fits-all plan. I first understand your income, responsibilities, goals, and budget, then suggest the most suitable LIC plan.</p>
+    </details>
+    <details>
+      <summary><strong>Do you help with policy renewal reminders?</strong></summary>
+      <p>Yes. Clients receive timely reminders via WhatsApp and call support so that no policy lapses due to missed premiums.</p>
+    </details>
+    <details>
+      <summary><strong>Can I get tax benefits on LIC policies?</strong></summary>
+      <p>Yes. Most LIC policies offer tax benefits under Section 80C, and maturity or death benefits may be tax-free under Section 10(10D), as per prevailing rules.</p>
+    </details>
+    <details>
+      <summary><strong>Do you provide doorstep or home visit services?</strong></summary>
+      <p>Yes. Doorstep services and home visits are available in and around Godda for documentation, guidance, and support.</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <h2>Office Location</h2>
+  <p><strong>BIMA CARE POINT – LIC Advisor Office</strong></p>
+  <p>
+    Ashok Kumar<br>
+    Hawai Nagar, Jamua Road<br>
+    Near Kissan Bhawan College<br>
+    Godda, Jharkhand – 814133
+  </p>
+  <p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Hawai+Nagar+Jamua+Road+Near+Kissan+Bhawan+College+Godda+814133" target="_blank" class="btn">
+      📍 View Office on Google Maps
+    </a>
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Your LIC Advisor</h2>
+  <form onsubmit="sendToWhatsApp(event)">
+    <input type="text" placeholder="Your Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <select>
+      <option>Life Insurance</option>
+      <option>Term Plan</option>
+      <option>Pension Plan</option>
+      <option>Child Plan</option>
+    </select>
+    <button type="submit">Request Callback</button>
+  </form>
+  <p><strong>Advisor:</strong> Ashok Kumar<br><strong>Phone:</strong> +91 9934352802</p>
+</section>
+
+<footer style="background:#0b2f6a;color:#e6ecff;padding:50px 20px 25px;">
+  <div style="max-width:1150px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:30px;">
+
+    <!-- BRAND -->
+    <div>
+      <h3 style="margin:0 0 10px;color:#fff;">BIMA CARE POINT</h3>
+      <p style="font-size:15px;opacity:0.9;">Powered by Ashok Kumar<br>LIC Life Insurance Advisor</p>
+      <p style="font-size:14px;opacity:0.85;">Honest advice. Simple explanations. Helping families in Godda make confident insurance decisions.</p>
+      <div style="margin-top:14px;display:flex;gap:10px;">
+        <a href="https://wa.me/919934352802" target="_blank" class="btn" style="padding:10px 18px;font-size:14px;">WhatsApp Us</a>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div>
+      <h4 style="color:#fff;">Services</h4>
+      <ul style="list-style:none;padding:0;font-size:14px;">
+        <li>Life Insurance</li>
+        <li>Term Insurance</li>
+        <li>Pension Plans</li>
+        <li>Child Education Plans</li>
+        <li>Claim Assistance</li>
+      </ul>
+    </div>
+
+    <!-- GUIDES -->
+    <div>
+      <h4 style="color:#fff;">Guides</h4>
+      <ul style="list-style:none;padding:0;font-size:14px;">
+        <li>Insurance Basics</li>
+        <li>Term Insurance Guide</li>
+        <li>LIC Policy Benefits</li>
+        <li>Tax Benefits (80C)</li>
+        <li>Claim Process</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div>
+      <h4 style="color:#fff;">Need Help?</h4>
+      <p style="font-size:14px;">📞 +91 9934352802</p>
+      <p style="font-size:14px;">📍 Godda, Jharkhand</p>
+      <p style="font-size:14px;">🏆 Best Insurance Advisor (5 Years)</p>
+    </div>
+
+  </div>
+
+  <div style="max-width:1150px;margin:30px auto 0;border-top:1px solid rgba(255,255,255,0.2);padding-top:15px;font-size:13px;opacity:0.85;text-align:center;">
+    © 2025 BIMA CARE POINT | Powered by Ashok Kumar | LIC Life Insurance Advisor<br>
+    Disclaimer: Insurance is subject to policy terms and conditions. Please read all documents carefully.
+  </div>
+</footer>
+
+<script>
+function sendToWhatsApp(event){
+  event.preventDefault();
+  const name = document.querySelector('#contact input[type="text"]').value;
+  const phone = document.querySelector('#contact input[type="tel"]').value;
+  const plan = document.querySelector('#contact select').value;
+
+  const message = `New Callback Request:%0AName: ${name}%0APhone: ${phone}%0AInterested Plan: ${plan}`;
+  const whatsappURL = `https://wa.me/919934352802?text=${message}`;
+
+  window.open(whatsappURL, '_blank');
+}
+
+function getLocation(){
+  const output = document.getElementById('locationText');
+  if(!navigator.geolocation){
+    output.innerText = 'Geolocation is not supported by your browser.';
+    return;
+  }
+  output.innerText = 'Fetching your location...';
+  navigator.geolocation.getCurrentPosition(
+    (position)=>{
+      const lat = position.coords.latitude.toFixed(5);
+      const lon = position.coords.longitude.toFixed(5);
+      output.innerHTML = `📍 Your current location:<br>Latitude: ${lat}<br>Longitude: ${lon}`;
+    },
+    ()=>{
+      output.innerText = 'Location permission denied.';
+    }
+  );
+}
+</script>
+
+</body>
+</html>
+
